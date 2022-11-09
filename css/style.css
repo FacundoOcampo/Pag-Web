@@ -1,0 +1,132 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+/*Estilos barra de navegacion*/
+.Nav{
+	background-color: #FDFDFF;
+	height: 8vh;
+	width: 100%;
+	display: flex;
+}
+.Nav-Menu{
+	width: 100%;
+	display: flex;
+	list-style: none;
+}
+.Nav-Text{
+	color: black;
+	line-height: 8vh;
+	margin-left: 3vw;
+	padding: 1vh;
+	text-decoration: none;
+	font-size: 4vh;
+	font-weight: 500;
+	border-radius: 1vh;
+}
+.Nav-TextH:hover{
+	background-color: #64A8F7;
+	transition: 0.4s;
+}
+.Logo{
+	color: black;
+	padding: 0px;
+}
+.Logo-GEO{
+	font-weight: 900;
+	margin-right: 0px;
+}
+.Logo-SER{
+	color: black;
+	font-weight: 300;
+	margin-left: 0px;
+}
+.Nav-Button{
+	background: none;
+	border: none;
+	color: white;
+	font-size: 4vh;
+	padding: 0px 2vh;
+	line-height: 8vh;
+	display: none;
+}
+
+@media (max-width: 768px){
+	.Nav-Button{
+		display: block;
+		margin-right: 3vh;
+		line-height: 6vh;
+		transition: width 2s;
+	}
+	.Nav{
+		justify-content: space-between;
+		height: 6vh;
+	}
+	.Nav-Text{
+		line-height: auto;
+		font-size: 2vh;
+		font-weight: 600;
+	}
+	.Nav-TextH{
+		margin-right: 3vh;
+	}
+	.Logo{
+		line-height: 6vh;
+	}
+	.Logo-SER{
+		font-weight: 400;
+	}
+	.Nav-Menu{
+		text-align: right;
+		position: absolute;
+		flex-direction: column;
+		background-color: #2c3e50;
+		visibility: collapse;
+		top: 6vh;
+		height: calc(40% - 6vh);
+	}
+	.Nav-TextH:hover{
+		background: none;
+		color: orange;
+	}
+	.Nav-Menu_Visible{
+		visibility: visible;
+	}
+}
+/*-Fin-*/
+.Container{
+	width: 100%;
+	height: 92vh;
+	background-color: red;
+}
+#Nosotros{
+	background-color: white;
+	text-align: center;
+}
+.Cont-Img-N{
+	height: 92vh;
+	width: 87%;
+	display: inline-block;
+	background-color: #021F7E;
+	text-align: center;
+}
+.Img-N{
+	filter: opacity(50%);
+	height: 92vh;
+	position: flex;
+}
+.Titulo-N{
+	line-height: 10vh;
+	color: white;
+}
+#Productos{
+	/*Vacio*/
+}
+#Noticias{
+	/*Vacio*/
+}
+#Contacto{
+	height: 100px;
+	background-color: #808080;
+}
