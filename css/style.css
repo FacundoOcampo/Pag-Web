@@ -3,6 +3,7 @@
 	margin: 0px;
 	font-family: 'Montserrat', sans-serif;
 	user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 /*Estilos barra de navegacion*/
 .Nav{
@@ -55,48 +56,174 @@
 }
 
 /*-Fin-*/
-.Container{
-	width: 100%;
-	height: 92vh;
-	background-color: red;
-}
 
-
+/*-Apartado Nosotros-*/
 #Nosotros{
 	background-color: #0A3278;
 	text-align: center;
+	height: 92vh;
 }
 .Cont-Img-N{
 	height: 92vh;
-	width: 85vw;
+	width: auto;
 	background-color: #f7f8fc;
 	position: relative;
 	display: inline-block;
 }
 .Img-N{
 	height: 92vh;
-	width: 85vw;
+	width: 89vw;
 }
-
 .Button-N{
-	color: #0A3278;
+	top: 68%;
+	left: 43%;
+	color: black;
 	position: absolute;
-	top: 70%;
-	left: 45%;
 	font-size: 3vh;
 	padding: 1vh;
 	text-decoration: none;
-	border-radius: 10%;
-	border: solid #0A3278;
+	border-radius: 2vh;
+	border: solid black .2vh;
 	background-color: #f7f8fc;
 }
 .Button-N:hover{
 	color: #f7f8fc;
-	background-color: #0A3278;
+	background-color: black;
 	transition: 0.5s;
 }
+.Button-Res{
+	visibility: collapse;
+}
+.Button_Desk{
+	visibility: visible;
+}
+.Resp-N{
+	visibility: collapse;
+}
+.Res-Img{
+	visibility: collapse;
+}
+.Res-Img{
+	display: none;
+	visibility: collapse;
+}
+
+/*-Fin-*/
+
+/*-Apartado Servicios-*/
+
+#Servicios{
+	background-color: #0A3278;
+	height: auto;
+}
+.Container_box{
+	background-color: #f7f8fc;
+	height: 45vh;
+	width: 90%;
+	margin: 0 auto;
+	padding: 3vw 0 3vw 0;
+}
+.ul{
+	position: relative;
+	margin: 38vh auto;
+	width: 40vw;
+	background-color: #f7f8fc;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:center;
+}
+.li{
+	background-color: #f7f8fc;
+	padding: 1vw;
+	margin: 0 1vw 0 1vw;
+	list-style: none;
+	border: solid black .3vh;
+	border-radius: 2vh;
+	transition: .5s;
+}
+.li:hover{
+	background-color: black;
+	color: white;
+}
+.SubContainer{
+	background-color: black;
+	position: relative;
+	text-align: center;
+	margin: 0 7vh;
+}
+.Bloque{
+	height: 30vh;
+	background-color: #f7f8fc;
+	padding: 1vw;
+	margin: 1vh 25vw 0 25vw;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	border: solid black 1vh;
+	border-radius: 2vh;
+}
+.Activo{
+	background-color: #f7f8fc;
+
+}
+.Bloque.Activo{
+	border: solid black .25vh;
+	border-radius: 2vh;
+	opacity: 1;
+}
+.Texto{
+	padding-top: 1.5vh;
+	width: 30vw;
+}
+.Boton_Serv{
+	color: black;
+	text-decoration: none;
+	padding: 2vh;
+	margin-top: 1.25vw;
+	position: relative;
+	background-color: #f7f8fc;
+	border: solid black .2vh;
+	border-radius: 3vh;
+	transition: .25s;
+	z-index: 1;
+	display: none;
+}
+.Boton_Serv.Activo{
+	display: inline-block;
+}
+.Boton_Serv:hover{
+	background-color: black;
+	color: white;
+}
+
+/*-Fin-*/
+#Noticias{
+	/*Vacio*/
+}
+#Contacto{
+	height: 10vh;
+	background-color: grey;
+	text-align: center;
+}
+.ContactCon{
+	text-align: center;
+	padding: 3vh 0;
+}
+.ContacTexto{
+	display: inline-block;
+	padding: 0 5vw;
+
+}
+.ContactBtton{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding: 0 4vw 0 0;
+}
+/*-Adaptabilidad-*/
 
 @media (max-width: 768px){
+	/*-Barra de Navegacion-*/
 	.Nav-Button{
 		display: block;
 		margin-right: 3vh;
@@ -128,10 +255,11 @@
 		text-align: right;
 		position: absolute;
 		flex-direction: column;
-		background-color: #4B4B4B;
+		background-color: #353535;
 		visibility: collapse;
 		top: 6vh;
-		height: calc(40% - 6vh);
+		height:146vh;
+		z-index: 2;
 	}
 	.Nav-TextH:hover{
 		background: none;
@@ -140,29 +268,121 @@
 	.Nav-Menu_Visible{
 		visibility: visible;
 	}
-	/*Nosotros*/
-	.Cont-Img-N{
-	}
-	.Img-N{
-		display: none;
+	/*-Fin-*/
+
+	/*-Apartado "Nosotros"-*/
+	#Nosotros{
+		background-color: #f7f8fc;
+		height: 88vh;
 	}
 	.Button-N{
-		display: none;
+		top: 65vh;
+		left: 25%;
+		right: 25%;
+		z-index: 1;
 	}
-	.Titulo-N{
-		padding: 0 30%;
-		top: 10vh;
+	.Button-Res{
+		visibility: visible;
+	}
+	.Button_Desk{
+		visibility: collapse;
+	}
+	.Resp-N{
+		top: 15%;
+		left: 10%;
+		right: 10%;
 		position: absolute;
+		visibility: visible;
+	}
+	.Titulo-N_Res{
+		font-size: 7vw;
+	}
+	.Sub-N_Res{
+		margin-top: 4vw;
+		font-size: 5vw;
+	}
+	.Des-N{
+		margin-top: 20vw;
+		font-size: 4vw;
+	}
+	.Res-Img{
+		visibility: visible;
+		position: absolute;
+		display: block;
+		left: 10vw;
+		top: 69vh;
+		height: 25vh;
+		width: 90%;
+		z-index: 0;
+	}
+	.Cont-Img-N{
+		visibility: collapse;
+	}
+	/*-Fin-*/
+
+	/*-Servicios-*/
+	#Servicios{
+		background-color: #f7f8fc;
+		height: auto;
+		width: 100vw;
+	}
+	.Container_box{
+		text-align: center;
+		width: 90vw;
+	}.SubContainer{
+		margin: auto;
+		width: 90vw;
+	}
+	.Bloque{
+		margin: 0 auto;
+		width: 88vw;
+		height: 35vh;
+		border: solid black .2vh;
+	}
+	.Bloque.Activo{
+		border: solid black .2vh;
+	}
+	.Boton_Serv{
+		position: relative;
+		top: -10vh;
+	}
+	.Texto{
+		padding: 1vh 1vw;
+		font-size: 4vw;
+		height: 100%;
+		width: 100%;
+		text-align: left;
+	}
+	.ul{
+		width: auto;
+	}
+	.li{
+		padding: 1vh 3vw;
+		width: auto;
+		height: auto;
+		border: solid black.2vh;
+	}
+	/*-Fin-*/
+	
+	#Contacto{
+		height: 10vh;
+		background-color: grey;
+		text-align: center;
+	}
+	.ContactCon{
+		text-align: center;
+		vertical-align: middle;
+	}
+	.ContacTexto{
+		display: inline-block;
+		padding: .7vh 2vw;
+	
+	}
+	.ContactBtton{
+		text-decoration: none;
+		color: black;
+		display: inline-block;
 	}
 }
 
-#Productos{
-	/*Vacio*/
-}
-#Noticias{
-	/*Vacio*/
-}
-#Contacto{
-	height: 100px;
-	background-color: #808080;
-}
+

@@ -1,0 +1,226 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/*Estilos barra de navegacion*/
+.Nav{
+	user-select: none;
+	background-color: white;
+	height: 8vh;
+	width: 100%;
+	display: flex;
+}
+.Nav-Menu{
+	width: 100%;
+	display: flex;
+	list-style: none;
+}
+.Nav-Text{
+	color: black;
+	line-height: 8vh;
+	margin-left: 3vw;
+	padding: 1vh;
+	text-decoration: none;
+	font-size: 4vh;
+	font-weight: 500;
+	border-radius: 1vh;
+}
+.Nav-TextH:hover{
+	background-color: #0A3278;
+	color: white;
+	transition: 0.4s;
+}
+.Logo{
+	color: black;
+	padding: 0px;
+}
+.Logo-GEO{
+	font-weight: 900;
+	margin-right: 0px;
+}
+.Logo-SER{
+	color: black;
+	font-weight: 300;
+	margin-left: 0px;
+}
+.Nav-Button{
+	background: none;
+	border: none;
+	color: white;
+	font-size: 4vh;
+	padding: 0px 2vh;
+	line-height: 8vh;
+	display: none;
+}
+
+/*-Fin-*/
+
+.Container{
+	width: 100%;
+	background-color: #0A3278;
+}
+
+.ApartadoCont{
+	width: 94vw;
+	margin: auto;
+	background-color: #f7f8fc;
+	height: 82vh;
+	text-align: center;
+}
+.Titulo{
+	font-size: 7vh;
+	padding: 7vh 0 3vh 0;
+}
+.SubTitulo{
+	font-size: 6vh;
+}
+.SubT{
+	font-size: 4vh;
+	padding: 3vh 0 0 0;
+}
+.Con_Container{
+	margin: 5vh;
+	font-size: 3vh;
+}
+.ContCon{
+	padding: 3vh;
+}
+
+
+
+#Contacto{
+	height: 10vh;
+	background-color: grey;
+	text-align: center;
+}
+.ContactCon{
+	text-align: center;
+	padding: 3vh 0;
+}
+.ContacTexto{
+	display: inline-block;
+	padding: 0 5vw;
+
+}
+.ContactBtton{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding: 0 4vw 0 0;
+}
+.Text{
+	visibility: collapse;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px){
+	/*-Barra de Navegacion-*/
+	.Nav-Button{
+		display: block;
+		margin-right: 3vh;
+		line-height: 6vh;
+		transition: width 2s;
+		color: black;
+		font-size: 3vh;
+	}
+	.Nav{
+		justify-content: space-between;
+		height: 6vh;
+	}
+	.Nav-Text{
+		line-height: auto;
+		font-size: 2vh;
+		font-weight: 600;
+	}
+	.Nav-TextH{
+		margin-right: 3vh;
+		color: white;
+	}
+	.Logo{
+		line-height: 6vh;
+	}
+	.Logo-SER{
+		font-weight: 400;
+	}
+	.Nav-Menu{
+		text-align: right;
+		position: absolute;
+		flex-direction: column;
+		background-color: #353535;
+		visibility: collapse;
+		top: 6vh;
+		height: 94vh;
+		z-index: 2;
+	}
+	.Nav-TextH:hover{
+		background: none;
+		color: orange;
+	}
+	.Nav-Menu_Visible{
+		visibility: visible;
+	}
+	/*Fin*/
+	
+	.Container{
+		background-color: #0A3278;
+	}
+	
+	.ApartadoCont{
+		width: 100vw;
+		background-color: #f7f8fc;
+		height: 84vh;
+		text-align: center;
+	}
+	.Titulo{
+		font-size: 3vh;
+		padding: 3vh 0 3vh 0;
+	}
+	.SubTitulo{
+		font-size: 3vh;
+	}
+	.SubT{
+		font-size: 2.5vh;
+		padding: 3vh 1vw;
+	}
+	.Con_Container{
+		margin: 1vh;
+		font-size: 2.5vh;
+	}
+	.ContCon{
+		padding: 2vh;
+	}
+	.Text{
+		visibility: visible;
+		margin: 20% 5vw;
+		font-size: 2vh;
+	}
+	
+	
+	#Contacto{
+		height: 10vh;
+		background-color: grey;
+		text-align: center;
+	}
+	.ContactCon{
+		text-align: center;
+		vertical-align: middle;
+	}
+	.ContacTexto{
+		display: inline-block;
+		padding: .7vh 2vw;
+	
+	}
+	.ContactBtton{
+		text-decoration: none;
+		color: black;
+		display: inline-block;
+	}
+}
+/*Fin*/

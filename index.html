@@ -3,39 +3,93 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Geo Servicios</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>GeoServicios</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+	<!--Estilos-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/f8f5117128.js" crossorigin="anonymous"></script>
+	<!--Javascripts-->
 	<script defer src="index.js" type="text/javascript"></script>
 </head>
 <body>
+	<!--Barra de navegacion-->
 	<nav class="Nav">
 		<div class="Container-Logo">
-			<a class="Nav-Text Logo Logo-GEO">GEO</a><a class="Nav-Text Logo Logo-SER">SERVICIOS</a>
+			<a href="index.html" class="Nav-Text Logo Logo-GEO">GEO</a><a href="index.html" class="Nav-Text Logo Logo-SER">SERVICIOS</a>
 		</div>
 		<button class="Nav-Button" aria-label="Abrir Menu">
 			<i class="fas fa-bars"></i>
 		</button>
 		<ul class="Nav-Menu">
-			<li class="Nav-MenuItem"><a href="#" class="Nav-Text Nav-TextH">Nosotros</a></li>
-			<li class="Nav-MenuItem"><a href="#" class="Nav-Text Nav-TextH">Servicios</a></li>
+			<li class="Nav-MenuItem"><a href="Nosotros/Nosotros.html" class="Nav-Text Nav-TextH">Nosotros</a></li>
+			<li class="Nav-MenuItem"><a href="Servicios/Servicios.html" class="Nav-Text Nav-TextH">Servicios</a></li>
 			<li class="Nav-MenuItem"><a href="#" class="Nav-Text Nav-TextH">Noticias</a></li>
-			<li class="Nav-MenuItem"><a href="#" class="Nav-Text Nav-TextH">Contacto</a></li>
+			<li class="Nav-MenuItem"><a href="Contacto/Contacto.html" class="Nav-Text Nav-TextH">Contacto</a></li>
 		</ul>
 	</nav>
+	<!--Fin de Barra de navegacion-->
+	<!--Apartado "Nosotros"-->
 	<section class="Container" id="Nosotros">
+
 		<div class="Cont-Img-N">
-			<img src="img/Primer Apartado 4.jpeg" class="Img-N">
+			<img src="img/Primer Apartado 4.jpeg" class="Img-N"> <!--Contenedor e imagen del logo"-->
 		</div>
-		<a href="#" class="Button-N">Sobre Nosotros</a> 
-		<h1 class="Titulo-N">GEOSERVICIOS</h1>
+
+		<a href="Nosotros/Nosotros.html" class="Button-N Button_Desk">¿Quienes somos?</a><!--Boton desk"-->
+		<a href="Nosotros/Nosotros.html" class="Button-N Button-Res">Más Sobre<br>Nosotros</a><!--Boton tel"-->
+
+		<div class="Resp-N"> <!--Texto tel-->
+			<h1 class="Titulo-N_Res">GEOSERVICIOS</h1>
+			<p class="Sub-N_Res">GEOFÍSICA DE PRECISIÓN</p>
+			<p class="Des-N">"Somos una compañia de exploración del subsuelo que brinda soluciones geofísicas innovadoras y precisas a los desafíos presentes en las diversas industrias."</p>
+		</div>
+
+		<img src="img/Primer Apartado.png" class="Res-Img"> <!--Imagen tel-->
+
 	</section>
-	<section class="Container" id="Servicios">
+	<!--Fin de apartado "Nosotros"-->
+	<!--Aapartado "Servicios"-->
+	<section class="" id="Servicios">
+
+		<div class="Container_box"> <!--Contenedor de las cartas y botones-->
+
+			<div class="SubContainer"><!--Contenedor de las cartas-->
+
+				<div class="Bloque Activo"> <!--Carta 1-->
+					<p class="Texto">GEOSERVICIOS presenta diversas unidades de negocio focalizadas en brindar aportes innovadores y adaptados de geofísica a los requerimientos particulares de los clientes.<br><br></p>
+					<a href="Servicios/Servicios.html#Metodos_Sismicos" class="Boton_Serv Activo">Más sobre nuestros servicios</a>
+				</div>
+
+				<div class="Bloque"><!--Carta 2-->
+					<p class="Texto Texto_Der">GEOSERVICIOS presta diversas servicios de consultorias entre ellas se encuentran:<br>Postprocesamiento de datos geofísicos.<br>Vinculación de modelos geofísicos a geológicos.<br>Entre muchas más.<br><br></p>
+					<a href="Servicios/Servicios.html#Consultorías" class="Boton_Serv">Más sobre nuestros consultorias</a>
+				</div>
+
+				<div class="Bloque"><!--Carta 3-->
+					<p class="Texto Texto_Der">GEOSERVICIOS se especializa en la investigación y desarrollo de:<br>
+					Variantes especificas de equipamiento geofísico.<br>Construcción de cables para relevamientos especificos.<br>Reparación de instrumentos geofísicos.<br>Entre muchos más.</p>
+					<a href="Servicios/Servicios.html#DesarrolloTec" class="Boton_Serv">Más sobre nuestra area de I&D</a>
+				</div>
+
+			</div>
+
+			<ul class="ul"> <!--Botones-->
+				<li class="li Activo">Servicios</li>
+				<li class="li">Consultoria</li>
+				<li class="li">I & D</li>
+			</ul>
+
+		</div>
+
 	</section>
-	<section class="Container" id="Noticias">
-	</section>
+	<!--Fin de apartado "Servicio"-->
 	<section class="Container" id="Contacto">
+		<div class="ContactCon">
+			<b class="ContacTexto">Contacto:</b>
+			<a href="#Contacto" class="FaceBtton ContactBtton"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+			<a href="#Contacto" class="LinkBtton ContactBtton"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+			<a href="#Contacto" class="LinkBtton ContactBtton"><i class="fa-solid fa-envelope"></i>Email</a>
+		</div>
 	</section>
 </body>
 </html>

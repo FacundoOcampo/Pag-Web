@@ -1,0 +1,202 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/*Barra de navegacion*/
+.Nav{
+	background-color: white;
+	height: 8vh;
+	width: 100%;
+	display: flex;
+}
+.Nav-Menu{
+	width: 100%;
+	display: flex;
+	list-style: none;
+}
+.Nav-Text{
+	color: black;
+	line-height: 8vh;
+	margin-left: 3vw;
+	padding: 1vh;
+	text-decoration: none;
+	font-size: 4vh;
+	font-weight: 500;
+	border-radius: 1vh;
+}
+.Nav-TextH:hover{
+	background-color: #0A3278;
+	color: white;
+	transition: 0.4s;
+}
+.Logo{
+	color: black;
+	padding: 0px;
+}
+.Logo-GEO{
+	font-weight: 900;
+	margin-right: 0px;
+}
+.Logo-SER{
+	color: black;
+	font-weight: 300;
+	margin-left: 0px;
+}
+.Nav-Button{
+	background: none;
+	border: none;
+	color: white;
+	font-size: 4vh;
+	padding: 0px 2vh;
+	line-height: 8vh;
+	display: none;
+}
+/*Fin*/
+
+
+.Container{
+	background-color: #0A3278;
+}
+
+/*Apartado Nosotros*/
+.Nosotros{
+	background-color: #f7f8fc;
+	width: 94vw;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 5vh;
+}
+.Titulo{
+	user-select: text;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	font-size: 2vw;
+}
+.Texto{
+	user-select: text;
+	padding: 0vw 3vw;
+	font-size: 1.5vw;
+	text-align: left;
+}
+.Cliente{
+	user-select: text;
+	font-size: 1.5vw;
+	display: inline-block;
+	padding: 2vh 4vw;
+}
+
+#Contacto{
+	height: 10vh;
+	background-color: grey;
+	text-align: center;
+}
+.ContactCon{
+	text-align: center;
+	padding: 3vh 0;
+}
+.ContacTexto{
+	display: inline-block;
+	padding: 0 5vw;
+
+}
+.ContactBtton{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding: 0 4vw 0 0;
+}
+/*Fin*/
+
+/*Adaptabilidad*/
+@media (max-width: 768px){
+	/*-Barra de Navegacion-*/
+	.Nav-Button{
+		display: block;
+		margin-right: 3vh;
+		line-height: 6vh;
+		transition: width 2s;
+		color: black;
+		font-size: 3vh;
+	}
+	.Nav{
+		justify-content: space-between;
+		height: 6vh;
+	}
+	.Nav-Text{
+		line-height: auto;
+		font-size: 2vh;
+		font-weight: 600;
+	}
+	.Nav-TextH{
+		margin-right: 3vh;
+		color: white;
+	}
+	.Logo{
+		line-height: 6vh;
+	}
+	.Logo-SER{
+		font-weight: 400;
+	}
+	.Nav-Menu{
+		text-align: right;
+		position: absolute;
+		flex-direction: column;
+		background-color: #353535;
+		visibility: collapse;
+		top: 6vh;
+		height: 94vh;
+		z-index: 2;
+	}
+	.Nav-TextH:hover{
+		background: none;
+		color: orange;
+	}
+	.Nav-Menu_Visible{
+		visibility: visible;
+	}
+	/*Fin*/
+
+	/*Apartado Nosotros*/
+	.Nosotros{
+		width: 100%;
+		height: auto;
+		padding: 3vw 0vw;
+	}
+	.Titulo{
+		padding: 2vh 0vh;
+		font-size: 2.5vh;
+	}
+	.Texto{
+		padding: 1vh 2vw;
+		font-size: 1.75vh;
+		text-align: center;
+	}
+	.Cliente{
+		padding-top: 1vh;
+		font-size: 1.75vh;
+	}
+	/*Fin*/
+	#Contacto{
+		height: 10vh;
+		background-color: grey;
+		text-align: center;
+	}
+	.ContactCon{
+		text-align: center;
+		vertical-align: middle;
+	}
+	.ContacTexto{
+		display: inline-block;
+		padding: .7vh 2vw;
+	
+	}
+	.ContactBtton{
+		text-decoration: none;
+		color: black;
+		display: inline-block;
+	}
+}
+/*Fin*/
